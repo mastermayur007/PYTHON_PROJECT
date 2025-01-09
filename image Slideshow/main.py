@@ -8,13 +8,7 @@ root.title("Image Slideshow Viewer")
 
 # Image paths and resizing
 image_path = [
-    r"E:\INSTA_POST\TG LINKDEDO 💯\WIN_20241022_19_10_41_Pro.jpg", 
-    r"E:\INSTA_POST\TG LINKDEDO 💯\WIN_20241022_19_10_58_Pro.jpg", 
-    r"E:\INSTA_POST\TG LINKDEDO 💯\WIN_20241215_21_18_35_Pro - Copy.jpg", 
-    r"E:\INSTA_POST\TG LINKDEDO 💯\WIN_20241215_21_19_51_Pro.jpg", 
-    r"E:\INSTA_POST\TG LINKDEDO 💯\WIN_20241022_19_10_41_Pro.jpg", 
-    r"E:\INSTA_POST\TG LINKDEDO 💯\WIN_20241022_19_10_41_Pro.jpg", 
-    r"E:\INSTA_POST\TG LINKDEDO 💯\WIN_20241022_19_10_41_Pro.jpg", 
+    
 ]
 image_size = (1080, 1080)
 
