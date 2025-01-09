@@ -1,0 +1,4 @@
+logo.txt
+sample.txt
+python -u "d:\PRACTICE-01\PYTHON\PROJECTS\PROJECT_100\FILE MANAGEMENT\main.py"
+ this in from logo.txt
