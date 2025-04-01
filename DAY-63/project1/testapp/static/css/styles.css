@@ -1,0 +1,388 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+header {
+    background: linear-gradient(90deg, #007bff, #6610f2);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideUp 0.7s ease-in-out;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Create Form Styling */
+form {
+    width: 50%;
+    margin: 30px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in;
+}
+
+/* Form input fields */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit button */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #0056b3;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+/* Animation for fading in form */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animation for sliding up the heading */
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .btn {
+        width: 100%; /* Full-width button on mobile */
+    }
+
+    input, select, textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.btn-danger {
+    background: #dc3545;
+}
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+}
+
+/* Mobile responsive styles */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin: 0 10px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    .social-icon img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+
+/* Container for About Us and Contact Us sections */
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* About Us Section */
+.about {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    color: #333;
+    animation: fadeIn 0.8s ease-in-out;
+    width: 45%;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.about h2 {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Contact Us Section */
+/* Contact Us Section */
+.contact {
+    flex: 1;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contact h2 {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    color: #6610f2;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Social Media Links */
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-icon {
+    font-size: 18px;
+    font-weight: 600;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #6610f2;
+    transform: scale(1.1);
+}
+
+.social-icon.facebook {
+    color: #3b5998;
+}
+
+.social-icon.twitter {
+    color: #00acee;
+}
+
+.social-icon.linkedin {
+    color: #0077b5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    .contact p {
+        font-size: 14px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about, .contact {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .about h2, .contact h2 {
+        font-size: 28px;
+    }
+
+    .about p, .contact p {
+        font-size: 14px;
+    }
+}
